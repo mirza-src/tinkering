@@ -16,3 +16,9 @@ I figured it was time to start writing down all the random stuff I do with compu
 - **NixOS**: Used to run Arch Linux (btw 😉), learned a lot there, then macOS, was happy there, but I like to do some _thorough cleaning_ of my computer every now and then (basically a clean reinstall). Then I discovered NixOS's reproducibility and now I'm all in.
 - **Secure Boot "Stuff"**: I bought a new laptop to run NixOS (btw 😉), but during the few days of using Windows and setting up NixOS, I discovered BitLocker (can't remember the last time I used Windows) and just fell into a rabbit hole of secure boot, disk encryption, TPM, etc.
 - **OpenStack**: I like cloud platforms, but I also LOVE _standards_ 🤤, so naturally, I had to dive into probably the most promising(?) open-source cloud platform.
+
+## 🕑 Recent
+
+Here are some of my recent experiments:
+
+- [[Initial setup on NixOS|Setting up OpenStack on NixOS]]

@@ -1,3 +1,9 @@
+---
+title: "Setting up OpenStack on NixOS"
+description: "A walkthrough to setting up OpenStack on NixOS"
+socialDescription: "Documenting my journey of setting up OpenStack on NixOS"
+---
+
 My interest in OpenStack started during a cloud computing course, where it was used for hands-on labs and to illustrate core cloud concepts. Since I prefer to self-host my development environments, by self-host I mean running everything locally so I can experiment and tinker. I thought setting up OpenStack would be straightforward. After all, getting platforms like rke2 up and running is pretty simple. How hard could OpenStack be?😅
 
 When I searched for "OpenStack installation," I landed on [this official guide](https://docs.openstack.org/install-guide/). It’s thorough, but honestly, a bit overwhelming. I prefer hands-on learning over wading through lengthy documentation, just give me something I can run, experiment with, and break, then I’ll figure out the rest. While detailed docs are important (please keep writing them!), I wish there were more streamlined, automated ways to get started for those of us who learn by doing.
