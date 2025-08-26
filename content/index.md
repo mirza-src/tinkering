@@ -21,4 +21,4 @@ I figured it was time to start writing down all the random stuff I do with compu
 
 Here are some of my recent experiments:
 
-- [[Initial setup on NixOS|Setting up OpenStack on NixOS]]
+- [[Setting up OpenStack on NixOS]]
