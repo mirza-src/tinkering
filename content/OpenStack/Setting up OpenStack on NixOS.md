@@ -1122,6 +1122,8 @@ https://github.com/cobaltcore-dev/openstack-nix/blob/e97581816584486555d2647ae2b
 Looks like we can read them from `systemd.services.glance.environment`:
 https://github.com/cobaltcore-dev/openstack-nix/blob/e97581816584486555d2647ae2b2aae6b1751197/modules/controller/openstack-controller.nix#L129
 
+Let's use them and add `openstackclient` to our machine:
+
 ```nix title="hosts/proart-p16/default.nix"
 {
   pkgs,
@@ -1133,11 +1135,18 @@ https://github.com/cobaltcore-dev/openstack-nix/blob/e97581816584486555d2647ae2b
 {
   # ...
   environment.variables = config.systemd.services.glance.environment;
+  environment.systemPackages = [ pkgs.openstackclient ];
   # ...
 }
 ```
 
-After rebuilding, let’s try some `openstack` commands:
+After rebuilding, let's log out and back in to ensure the environment variables are loaded:
+
+```sh
+loginctl terminate-user $USER
+```
+
+Finally, let's try some `openstack` commands!
 
 ```sh
 openstack catalog list
